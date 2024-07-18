@@ -1,0 +1,159 @@
+\doxysection{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE Class Reference}
+\hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+
+
+Is the source of most other value type classes.  
+
+
+
+
+{\ttfamily \#include $<$cymath\+\_\+type.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const int \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac8939d6b8b526d093e6fffa864de2f12}{\+\_\+\+\_\+cast\+\_\+int}} ()
+\item 
+virtual const float \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a53a69a36439d9567014693c26a5d97c4}{\+\_\+\+\_\+cast\+\_\+float}} ()
+\item 
+virtual const double \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a63bccdbdc3d840b39fea572288d4912d}{\+\_\+\+\_\+cast\+\_\+double}} ()
+\item 
+virtual const bool \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a731eb47afb41ab21311344cc9dd31a98}{\+\_\+\+\_\+is\+Printable}} ()
+\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3832f552157c08e307faf5a97ed1defa}{\+\_\+\+\_\+cast\+\_\+string}} ()
+\item 
+virtual const std\+::function$<$ void(void \texorpdfstring{$\ast$}{*})$>$ \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_accb79faf1ffd515072f890064806707d}{\+\_\+\+\_\+get\+\_\+value\+\_\+handle}} (void \texorpdfstring{$\ast$}{*}type)
+\begin{DoxyCompactList}\small\item\em Finds and gets a value handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7}{\+\_\+\+\_\+\+CYMATH\+\_\+\+VALUE\+\_\+\+TYPES}} \{ \newline
+\mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a571a846e3949c58f1fcee7ab6db3d1fd}{INT}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7ae8587e5e4a409e271bf6d56da5f0526b}{FLOAT}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7aca3c00a5f969f41d8263aa51e4463e21}{DOUBLE}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7ac5f9be6c81d58fedde10518df385a681}{SCIENTIFIC\+\_\+\+NOTATION}}
+, \newline
+\mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7aba05e94363698ad2a84a1fb36088cb50}{MATRIX}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a36a467ed8307ef434bf98cc502ce2dc2}{COMPLEX}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a6c9992e80d7c0bd762becf813205ab60}{VALUE\+\_\+\+ARRAY}}
+, \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a25d140de69d37dc03db946612c6d1f59}{UNKNOWN}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7}{\+\_\+\+\_\+\+CYMATH\+\_\+\+VALUE\+\_\+\+TYPES}} \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac3bb7ca251078e15550b3e364d0294c8}{\+\_\+\+\_\+\+THIS\+\_\+\+TYPE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the source of most other value type classes. 
+
+The class \doxylink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE} is used by almost every other value like type in cymath. It also is the class most cymath functions use 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_CYMATH\_VALUE\_TYPES@{\_\_CYMATH\_VALUE\_TYPES}}
+\index{\_\_CYMATH\_VALUE\_TYPES@{\_\_CYMATH\_VALUE\_TYPES}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_CYMATH\_VALUE\_TYPES}{\_\_CYMATH\_VALUE\_TYPES}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+enum \mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+VALUE\+\_\+\+TYPES}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INT@{INT}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!INT@{INT}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a571a846e3949c58f1fcee7ab6db3d1fd}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+INT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLOAT@{FLOAT}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!FLOAT@{FLOAT}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7ae8587e5e4a409e271bf6d56da5f0526b}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+FLOAT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOUBLE@{DOUBLE}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!DOUBLE@{DOUBLE}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7aca3c00a5f969f41d8263aa51e4463e21}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+DOUBLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCIENTIFIC\_NOTATION@{SCIENTIFIC\_NOTATION}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!SCIENTIFIC\_NOTATION@{SCIENTIFIC\_NOTATION}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7ac5f9be6c81d58fedde10518df385a681}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+SCIENTIFIC\+\_\+\+NOTATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MATRIX@{MATRIX}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!MATRIX@{MATRIX}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7aba05e94363698ad2a84a1fb36088cb50}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+MATRIX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMPLEX@{COMPLEX}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!COMPLEX@{COMPLEX}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a36a467ed8307ef434bf98cc502ce2dc2}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+COMPLEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VALUE\_ARRAY@{VALUE\_ARRAY}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!VALUE\_ARRAY@{VALUE\_ARRAY}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a6c9992e80d7c0bd762becf813205ab60}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+VALUE\+\_\+\+ARRAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN@{UNKNOWN}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!UNKNOWN@{UNKNOWN}}}\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7a25d140de69d37dc03db946612c6d1f59}\label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7} 
+UNKNOWN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a63bccdbdc3d840b39fea572288d4912d}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_double@{\_\_cast\_double}}
+\index{\_\_cast\_double@{\_\_cast\_double}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_cast\_double()}{\_\_cast\_double()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a63bccdbdc3d840b39fea572288d4912d} 
+virtual const double \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+double (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a53a69a36439d9567014693c26a5d97c4}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_float@{\_\_cast\_float}}
+\index{\_\_cast\_float@{\_\_cast\_float}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_cast\_float()}{\_\_cast\_float()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a53a69a36439d9567014693c26a5d97c4} 
+virtual const float \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+float (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac8939d6b8b526d093e6fffa864de2f12}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_int@{\_\_cast\_int}}
+\index{\_\_cast\_int@{\_\_cast\_int}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_cast\_int()}{\_\_cast\_int()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac8939d6b8b526d093e6fffa864de2f12} 
+virtual const int \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3832f552157c08e307faf5a97ed1defa}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_string@{\_\_cast\_string}}
+\index{\_\_cast\_string@{\_\_cast\_string}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_cast\_string()}{\_\_cast\_string()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3832f552157c08e307faf5a97ed1defa} 
+virtual const char \texorpdfstring{$\ast$}{*} \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_accb79faf1ffd515072f890064806707d}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_get\_value\_handle@{\_\_get\_value\_handle}}
+\index{\_\_get\_value\_handle@{\_\_get\_value\_handle}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_value\_handle()}{\_\_get\_value\_handle()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_accb79faf1ffd515072f890064806707d} 
+virtual const std\+::function$<$ void(void \texorpdfstring{$\ast$}{*})$>$ \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+get\+\_\+value\+\_\+handle (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Finds and gets a value handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Finds} & an appropriate value handle, which can then be used process the value into any other value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value handle function 
+\end{DoxyReturn}
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a731eb47afb41ab21311344cc9dd31a98}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_isPrintable@{\_\_isPrintable}}
+\index{\_\_isPrintable@{\_\_isPrintable}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_isPrintable()}{\_\_isPrintable()}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a731eb47afb41ab21311344cc9dd31a98} 
+virtual const bool \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+Printable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac3bb7ca251078e15550b3e364d0294c8}\index{\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_THIS\_TYPE@{\_\_THIS\_TYPE}}
+\index{\_\_THIS\_TYPE@{\_\_THIS\_TYPE}!\_\_CYMATH\_ABSTRACT\_TYPE@{\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_THIS\_TYPE}{\_\_THIS\_TYPE}}
+{\footnotesize\ttfamily \label{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ac3bb7ca251078e15550b3e364d0294c8} 
+\mbox{\hyperlink{class_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a3b267960a578f57990a47b5c7daa5ea7}{\+\_\+\+\_\+\+CYMATH\+\_\+\+VALUE\+\_\+\+TYPES}} \+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+\+THIS\+\_\+\+TYPE\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cymath__type_8hpp}{cymath\+\_\+type.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,29 @@
+\doxysection{cymath\+\_\+type.\+hpp}
+\hypertarget{cymath__type_8hpp_source}{}\label{cymath__type_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ absol\ on\ 7/18/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ CYMATH\_CYMATH\_TYPE\_HPP}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ CYMATH\_CYMATH\_TYPE\_HPP}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }cy\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\_\_CYMATH\_ABSTRACT\_TYPE}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \_\_cast\_int()\ \{\ \textcolor{keywordflow}{return}\ 0;\ \};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \_\_cast\_float()\ \{\ \textcolor{keywordflow}{return}\ 0;\ \};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_\_cast\_double()\ \{\ \textcolor{keywordflow}{return}\ 0;\ \};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \_\_isPrintable()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \_\_cast\_string()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}NO\_VALUE"{}};\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ std::function<\textcolor{keywordtype}{void}*(\textcolor{keywordtype}{void}*)>\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}{\_\_get\_value\_handle}}(\textcolor{keywordtype}{void}*\ type)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\string~\_\_CYMATH\_ABSTRACT\_TYPE}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00033\ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CYMATH\_CYMATH\_TYPE\_HPP}}
+
+\end{DoxyCode}

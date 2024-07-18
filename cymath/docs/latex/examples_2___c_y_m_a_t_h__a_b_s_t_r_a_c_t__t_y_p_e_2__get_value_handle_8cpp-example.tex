@@ -1,0 +1,60 @@
+\doxysection{examples/\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE/\+\_\+\+\_\+get\+\_\+value\+\_\+handle.\+cpp}
+\hypertarget{examples_2___c_y_m_a_t_h__a_b_s_t_r_a_c_t__t_y_p_e_2__get_value_handle_8cpp-example}{}\label{examples_2___c_y_m_a_t_h__a_b_s_t_r_a_c_t__t_y_p_e_2__get_value_handle_8cpp-example}Finds and gets a value handle.
+
+Finds and gets a value handle 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type in the appropriate type enum Finds an appropriate value handle, which can then be used process the value into any other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value handle function
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{comment}{//}}
+\DoxyCodeLine{\textcolor{comment}{//\ Created\ by\ absol\ on\ 7/18/2024.}}
+\DoxyCodeLine{\textcolor{comment}{//}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}../../cymath\_type.hpp"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }cymath\_type\_derived\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}\ \{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{bool}\ isInt\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{void}\ *value;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ toInt(\textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}*\textcolor{keyword}{>}(value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ toFloat(\textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}*\textcolor{keyword}{>}(value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{enum}\ THIS\_SUPPORTED\_TYPES\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ INT,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FLOAT}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ std::function<\textcolor{keywordtype}{void}*(\textcolor{keywordtype}{void}*)>\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}{\_\_get\_value\_handle}}(\textcolor{keywordtype}{void}\ *type)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ t\ =\ \textcolor{keyword}{static\_cast<}THIS\_SUPPORTED\_TYPES\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}intptr\_t\textcolor{keyword}{>}(type));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (t\ ==\ INT)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ toInt;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (t\ ==\ FLOAT)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ toFloat;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Unsupported\ type:\ "{}}\ +\ std::to\_string(t));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \string~cymath\_type\_derived()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ free(value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCodeInclude}
+ 

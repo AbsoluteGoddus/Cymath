@@ -1,0 +1,62 @@
+\doxysection{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE Class Reference}
+\hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+
+
+Is the source of most other value type classes.  
+
+
+
+
+{\ttfamily \#include $<$cymath\+\_\+type.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d} 
+virtual const int {\bfseries \+\_\+\+\_\+cast\+\_\+int} ()
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746} 
+virtual const float {\bfseries \+\_\+\+\_\+cast\+\_\+float} ()
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33} 
+virtual const double {\bfseries \+\_\+\+\_\+cast\+\_\+double} ()
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0678d0b4ed227f07fb3a8921516b3588}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0678d0b4ed227f07fb3a8921516b3588} 
+virtual const bool {\bfseries \+\_\+\+\_\+is\+Printable} ()
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6} 
+virtual const char \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+\+\_\+cast\+\_\+string} ()
+\item 
+virtual const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfstring{$\ast$}{*})$>$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}{\+\_\+\+\_\+get\+\_\+value\+\_\+handle}} (void \texorpdfstring{$\ast$}{*}type)
+\begin{DoxyCompactList}\small\item\em Finds and gets a value handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the source of most other value type classes. 
+
+The class \doxylink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE} is used by almost every other value like type in cymath. It also is the class most cymath functions use 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_get\_value\_handle@{\_\_get\_value\_handle}}
+\index{\_\_get\_value\_handle@{\_\_get\_value\_handle}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_value\_handle()}{\_\_get\_value\_handle()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54} 
+virtual const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfstring{$\ast$}{*})$>$ cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+get\+\_\+value\+\_\+handle (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Finds and gets a value handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type in the appropriate type enum Finds an appropriate value handle, which can then be used process the value into any other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value handle function 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cymath\+\_\+type.\+hpp\end{DoxyCompactItemize}
