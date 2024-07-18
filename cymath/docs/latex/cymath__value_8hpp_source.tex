@@ -8,6 +8,81 @@
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ CYMATH\_CYMATH\_VALUE\_HPP}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ CYMATH\_CYMATH\_VALUE\_HPP}}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CYMATH\_CYMATH\_VALUE\_HPP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cymath__type_8hpp}{cymath\_type.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }cy\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l}{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\_\_CYMATH\_ABSTRACT\_TYPE}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\_TYPES}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ INT,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ FLOAT,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ DOUBLE}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a18831f5305982c73655cf9a2ea7611c6}{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}(\textcolor{keywordtype}{size\_t}\ type,\ \textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef}{\_\_set\_data}}(\{\textcolor{keyword}{static\_cast<}\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\_TYPES}}\textcolor{keyword}{>}(type),\ value\});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ad2f6427eed0c5d35e8b86ae8e00ac8cb}{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}(std::pair<size\_t,\ void*>\ data)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef}{\_\_set\_data}}(\{\textcolor{keyword}{static\_cast<}\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\_TYPES}}\textcolor{keyword}{>}(data.first),\ data.second\});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::function<\textcolor{keywordtype}{void}*(\textcolor{keywordtype}{void}*)>\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a5a39cbb61be1bb0fc946663fe37f3556}{\_\_get\_value\_handle}}(\textcolor{keywordtype}{void}*\ type)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ t\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\_TYPES}}\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(type));}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (t\ >\ 2)\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Wrong\ value\ type:\ "{}}\ +\ std::to\_string(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(type)));}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (t)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ INT:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ function\_handle\_int;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ FLOAT:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ function\_handle\_float;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ DOUBLE:}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ function\_handle\_double;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef}{\_\_set\_data}}(std::pair<VALUE\_TYPES,\ void*>\ data)\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \_type\ =\ data.first;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \_value\ =\ data.second;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::pair<size\_t,\ void*>\ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ac7cbf4fa2905135dc579afd89c92a6c5}{\_\_get\_cast\_info}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\_type,\ \_value\};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l}{\string~\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ free(\_value);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}*\ \_value;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\_TYPES}}\ \_type;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ function\_handle\_int(\textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}*\textcolor{keyword}{>}(value);}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ function\_handle\_float(\textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float})\ <\ 4)\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Float\ size\ of\ system\ is\ smaller\ than\ 4.\ This\ could\ lead\ to\ issues"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}*\textcolor{keyword}{>}(value);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ function\_handle\_double(\textcolor{keywordtype}{void}*\ value)\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double})\ <\ 8)\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Double\ size\ of\ system\ is\ smaller\ than\ 8.\ This\ could\ lead\ to\ issues"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}*\textcolor{keyword}{>}(value);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \};}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CYMATH\_CYMATH\_VALUE\_HPP}}
 
 \end{DoxyCode}

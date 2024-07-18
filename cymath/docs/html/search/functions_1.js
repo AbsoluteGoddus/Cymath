@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7e_5f_5fcymath_5fabstract_5ftype_0',['~__CYMATH_ABSTRACT_TYPE',['../classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e.html#a4722e8018a3b6d65f65ab2533fb44fad',1,'cy::__CYMATH_ABSTRACT_TYPE']]]
+  ['operator_22_22_5fd_0',['operator&quot;&quot;_d',['../cymath__literals_8hpp.html#aa04a5e5e984fb476227bb6f55c93b231',1,'cy']]],
+  ['operator_22_22_5fi_1',['operator&quot;&quot;_i',['../cymath__literals_8hpp.html#a3fe56c2bf55a69c401c6cfbd5ea6ad63',1,'cy']]]
 ];

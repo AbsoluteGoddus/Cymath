@@ -9,38 +9,41 @@ Is the source of most other value type classes.
 
 {\ttfamily \#include $<$cymath\+\_\+type.\+hpp$>$}
 
+Inheritance diagram for cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaeada43b13e5f6c04eebc9981785d450}{\+\_\+\+\_\+is\+\_\+castable\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to an int or not. \end{DoxyCompactList}\item 
 virtual const int \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d}{\+\_\+\+\_\+cast\+\_\+int}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab1ff257ed02012df1c0f13b8ee98432a}{\+\_\+\+\_\+is\+\_\+castable\+\_\+float}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a float or not. \end{DoxyCompactList}\item 
 virtual const float \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746}{\+\_\+\+\_\+cast\+\_\+float}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0ecb4d59423fc03703b677cb311c6961}{\+\_\+\+\_\+is\+\_\+castable\+\_\+double}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a double or not. \end{DoxyCompactList}\item 
 virtual const double \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33}{\+\_\+\+\_\+cast\+\_\+double}} ()
-\item 
-virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0678d0b4ed227f07fb3a8921516b3588}{\+\_\+\+\_\+is\+Printable}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ae481aef675d59f0b9f592812fc891c92}{\+\_\+\+\_\+is\+\_\+printable}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a string or not. \end{DoxyCompactList}\item 
 virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6}{\+\_\+\+\_\+cast\+\_\+string}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
 virtual const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfstring{$\ast$}{*})$>$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}{\+\_\+\+\_\+get\+\_\+value\+\_\+handle}} (void \texorpdfstring{$\ast$}{*}type)
 \begin{DoxyCompactList}\small\item\em Finds and gets a value handle. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a4722e8018a3b6d65f65ab2533fb44fad}{\texorpdfstring{$\sim$}{\string~}\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE}} ()=default
-\end{DoxyCompactItemize}
+virtual const std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaab5d316aeaee1d7abfa757e84fdd0f2}{\+\_\+\+\_\+get\+\_\+cast\+\_\+info}} ()
+\begin{DoxyCompactList}\small\item\em Function to get the cast info needed for casting. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Is the source of most other value type classes. 
 
 The class \doxylink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE} is used by almost every other value like type in cymath. It also is the class most cymath functions use 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a4722e8018a3b6d65f65ab2533fb44fad}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!````~\_\_CYMATH\_ABSTRACT\_TYPE@{\texorpdfstring{$\sim$}{\string~}\_\_CYMATH\_ABSTRACT\_TYPE}}
-\index{````~\_\_CYMATH\_ABSTRACT\_TYPE@{\texorpdfstring{$\sim$}{\string~}\_\_CYMATH\_ABSTRACT\_TYPE}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}\_\_CYMATH\_ABSTRACT\_TYPE()}{\string~\_\_CYMATH\_ABSTRACT\_TYPE()}}
-{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a4722e8018a3b6d65f65ab2533fb44fad} 
-virtual cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\texorpdfstring{$\sim$}{\string~}\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_double@{\_\_cast\_double}}
@@ -49,23 +52,68 @@ virtual cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\texorpdfstrin
 {\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33} 
 virtual const double cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+double (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+
+
+Function to cast the abstract value of a type into a real one. 
+
+\begin{DoxyReturn}{Returns}
+The double representation of the value 
+\end{DoxyReturn}
 \Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_float@{\_\_cast\_float}}
 \index{\_\_cast\_float@{\_\_cast\_float}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
 \doxysubsubsection{\texorpdfstring{\_\_cast\_float()}{\_\_cast\_float()}}
 {\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746} 
 virtual const float cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+float (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+
+
+Function to cast the abstract value of a type into a real one. 
+
+\begin{DoxyReturn}{Returns}
+The float representation of the value 
+\end{DoxyReturn}
 \Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_int@{\_\_cast\_int}}
 \index{\_\_cast\_int@{\_\_cast\_int}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
 \doxysubsubsection{\texorpdfstring{\_\_cast\_int()}{\_\_cast\_int()}}
 {\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d} 
 virtual const int cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+
+
+Function to cast the abstract value of a type into a real one. 
+
+\begin{DoxyReturn}{Returns}
+The Integer representation of the value 
+\end{DoxyReturn}
 \Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_cast\_string@{\_\_cast\_string}}
 \index{\_\_cast\_string@{\_\_cast\_string}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
 \doxysubsubsection{\texorpdfstring{\_\_cast\_string()}{\_\_cast\_string()}}
 {\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6} 
 virtual const char \texorpdfstring{$\ast$}{*} cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+cast\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Function to cast the abstract value of a type into a real one. 
+
+\begin{DoxyReturn}{Returns}
+The c-\/style string representation of the value 
+\end{DoxyReturn}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaab5d316aeaee1d7abfa757e84fdd0f2}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_get\_cast\_info@{\_\_get\_cast\_info}}
+\index{\_\_get\_cast\_info@{\_\_get\_cast\_info}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_cast\_info()}{\_\_get\_cast\_info()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaab5d316aeaee1d7abfa757e84fdd0f2} 
+virtual const std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$ cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+get\+\_\+cast\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Function to get the cast info needed for casting. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::pair, containing the idx of the appropriate value type and the void ptr containing the value 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ac7cbf4fa2905135dc579afd89c92a6c5}{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL}}.
 
 \Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_get\_value\_handle@{\_\_get\_value\_handle}}
 \index{\_\_get\_value\_handle@{\_\_get\_value\_handle}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
@@ -77,20 +125,72 @@ virtual const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfs
 
 Finds and gets a value handle. 
 
+Finds an appropriate value handle, which can then be used process the value into any other value
+
 
 \begin{DoxyParams}{Parameters}
-{\em type} & The type in the appropriate type enum Finds an appropriate value handle, which can then be used process the value into any other value \\
+{\em type} & The type in the appropriate type enum \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The value handle function 
 \end{DoxyReturn}
-\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0678d0b4ed227f07fb3a8921516b3588}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_isPrintable@{\_\_isPrintable}}
-\index{\_\_isPrintable@{\_\_isPrintable}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
-\doxysubsubsection{\texorpdfstring{\_\_isPrintable()}{\_\_isPrintable()}}
-{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0678d0b4ed227f07fb3a8921516b3588} 
-virtual const bool cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+Printable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+
+Reimplemented in \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a5a39cbb61be1bb0fc946663fe37f3556}{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL}}.
+
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0ecb4d59423fc03703b677cb311c6961}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_is\_castable\_double@{\_\_is\_castable\_double}}
+\index{\_\_is\_castable\_double@{\_\_is\_castable\_double}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_is\_castable\_double()}{\_\_is\_castable\_double()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0ecb4d59423fc03703b677cb311c6961} 
+virtual const bool cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+\_\+castable\+\_\+double (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks whether the type is castale to a double or not. 
+
+\begin{DoxyReturn}{Returns}
+Returns if the type is castable to a double 
+\end{DoxyReturn}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab1ff257ed02012df1c0f13b8ee98432a}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_is\_castable\_float@{\_\_is\_castable\_float}}
+\index{\_\_is\_castable\_float@{\_\_is\_castable\_float}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_is\_castable\_float()}{\_\_is\_castable\_float()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab1ff257ed02012df1c0f13b8ee98432a} 
+virtual const bool cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+\_\+castable\+\_\+float (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks whether the type is castale to a float or not. 
+
+\begin{DoxyReturn}{Returns}
+Returns if the type is castable to a float 
+\end{DoxyReturn}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaeada43b13e5f6c04eebc9981785d450}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_is\_castable\_int@{\_\_is\_castable\_int}}
+\index{\_\_is\_castable\_int@{\_\_is\_castable\_int}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_is\_castable\_int()}{\_\_is\_castable\_int()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaeada43b13e5f6c04eebc9981785d450} 
+virtual const bool cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+\_\+castable\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks whether the type is castale to an int or not. 
+
+\begin{DoxyReturn}{Returns}
+Returns if the type is castable to an int 
+\end{DoxyReturn}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ae481aef675d59f0b9f592812fc891c92}\index{cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}!\_\_is\_printable@{\_\_is\_printable}}
+\index{\_\_is\_printable@{\_\_is\_printable}!cy::\_\_CYMATH\_ABSTRACT\_TYPE@{cy::\_\_CYMATH\_ABSTRACT\_TYPE}}
+\doxysubsubsection{\texorpdfstring{\_\_is\_printable()}{\_\_is\_printable()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ae481aef675d59f0b9f592812fc891c92} 
+virtual const bool cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE\+::\+\_\+\+\_\+is\+\_\+printable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks whether the type is castale to a string or not. 
+
+\begin{DoxyReturn}{Returns}
+Returns if the type is castable to a string 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

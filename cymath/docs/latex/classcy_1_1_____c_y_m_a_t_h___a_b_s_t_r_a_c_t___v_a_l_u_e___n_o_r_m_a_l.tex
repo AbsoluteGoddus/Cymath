@@ -1,0 +1,154 @@
+\doxysection{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL Class Reference}
+\hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l}{}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+
+
+Base value class.  
+
+
+
+
+{\ttfamily \#include $<$cymath\+\_\+value.\+hpp$>$}
+
+Inheritance diagram for cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}\label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5} 
+enum \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\+\_\+\+TYPES}} \{ {\bfseries INT}
+, {\bfseries FLOAT}
+, {\bfseries DOUBLE}
+ \}
+\begin{DoxyCompactList}\small\item\em Every possible type that this class can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a18831f5305982c73655cf9a2ea7611c6}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL}} (size\+\_\+t type, void \texorpdfstring{$\ast$}{*}value)
+\item 
+\mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ad2f6427eed0c5d35e8b86ae8e00ac8cb}{\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL}} (std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$ data)
+\item 
+const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfstring{$\ast$}{*})$>$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a5a39cbb61be1bb0fc946663fe37f3556}{\+\_\+\+\_\+get\+\_\+value\+\_\+handle}} (void \texorpdfstring{$\ast$}{*}type) override
+\begin{DoxyCompactList}\small\item\em Finds and gets a value handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef}{\+\_\+\+\_\+set\+\_\+data}} (std\+::pair$<$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\+\_\+\+TYPES}}, void \texorpdfstring{$\ast$}{*} $>$ data)
+\begin{DoxyCompactList}\small\item\em Sets the data that the object contains. \end{DoxyCompactList}\item 
+const std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ac7cbf4fa2905135dc579afd89c92a6c5}{\+\_\+\+\_\+get\+\_\+cast\+\_\+info}} () override
+\begin{DoxyCompactList}\small\item\em Function to get the cast info needed for casting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e}{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaeada43b13e5f6c04eebc9981785d450}{\+\_\+\+\_\+is\+\_\+castable\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to an int or not. \end{DoxyCompactList}\item 
+virtual const int \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a88bb2ed616fda193455a9cfd53a9243d}{\+\_\+\+\_\+cast\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab1ff257ed02012df1c0f13b8ee98432a}{\+\_\+\+\_\+is\+\_\+castable\+\_\+float}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a float or not. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ab5976f3a5be290a6329ea43b96b10746}{\+\_\+\+\_\+cast\+\_\+float}} ()
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_a0ecb4d59423fc03703b677cb311c6961}{\+\_\+\+\_\+is\+\_\+castable\+\_\+double}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a double or not. \end{DoxyCompactList}\item 
+virtual const double \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aa6de9a094de06f5b18d42fd0a4ebdd33}{\+\_\+\+\_\+cast\+\_\+double}} ()
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ae481aef675d59f0b9f592812fc891c92}{\+\_\+\+\_\+is\+\_\+printable}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the type is castale to a string or not. \end{DoxyCompactList}\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_af18e9c675562f2e167a5503fa96bf2d6}{\+\_\+\+\_\+cast\+\_\+string}} ()
+\begin{DoxyCompactList}\small\item\em Function to cast the abstract value of a type into a real one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base value class. 
+
+Used to save, get and manage Normal value types (Int, Float, Double) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a18831f5305982c73655cf9a2ea7611c6}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\index{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\doxysubsubsection{\texorpdfstring{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL()}{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a18831f5305982c73655cf9a2ea7611c6} 
+cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{type}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the value, in index form according to VALUE\+\_\+\+TYPES \\
+\hline
+{\em value} & The value to be stored \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ad2f6427eed0c5d35e8b86ae8e00ac8cb}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\index{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\doxysubsubsection{\texorpdfstring{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL()}{\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ad2f6427eed0c5d35e8b86ae8e00ac8cb} 
+cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL (\begin{DoxyParamCaption}\item[{std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a std\+::pair$<$size\+\_\+t, void\texorpdfstring{$\ast$}{*}$>$ contain the value to be stored \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ac7cbf4fa2905135dc579afd89c92a6c5}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!\_\_get\_cast\_info@{\_\_get\_cast\_info}}
+\index{\_\_get\_cast\_info@{\_\_get\_cast\_info}!cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_cast\_info()}{\_\_get\_cast\_info()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_ac7cbf4fa2905135dc579afd89c92a6c5} 
+const std\+::pair$<$ size\+\_\+t, void \texorpdfstring{$\ast$}{*} $>$ cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+::\+\_\+\+\_\+get\+\_\+cast\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function to get the cast info needed for casting. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::pair, containing the idx of the appropriate value type and the void ptr containing the value 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_aaab5d316aeaee1d7abfa757e84fdd0f2}{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE}}.
+
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a5a39cbb61be1bb0fc946663fe37f3556}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!\_\_get\_value\_handle@{\_\_get\_value\_handle}}
+\index{\_\_get\_value\_handle@{\_\_get\_value\_handle}!cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_value\_handle()}{\_\_get\_value\_handle()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a5a39cbb61be1bb0fc946663fe37f3556} 
+const std\+::function$<$ void \texorpdfstring{$\ast$}{*}(void \texorpdfstring{$\ast$}{*})$>$ cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+::\+\_\+\+\_\+get\+\_\+value\+\_\+handle (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Finds and gets a value handle. 
+
+Finds an appropriate value handle, which can then be used process the value into any other value
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type in the appropriate type enum \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value handle function 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___t_y_p_e_ad7f937ee8a49593e0e16c2101d06dc54}{cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+TYPE}}.
+
+\Hypertarget{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef}\index{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}!\_\_set\_data@{\_\_set\_data}}
+\index{\_\_set\_data@{\_\_set\_data}!cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL@{cy::\_\_CYMATH\_ABSTRACT\_VALUE\_NORMAL}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_data()}{\_\_set\_data()}}
+{\footnotesize\ttfamily \label{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a9788144616b28acd8f97ec15d82fbdef} 
+void cy\+::\+\_\+\+\_\+\+CYMATH\+\_\+\+ABSTRACT\+\_\+\+VALUE\+\_\+\+NORMAL\+::\+\_\+\+\_\+set\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{classcy_1_1_____c_y_m_a_t_h___a_b_s_t_r_a_c_t___v_a_l_u_e___n_o_r_m_a_l_a315268f1390a9c00be4b6c1c591fa7f5}{VALUE\+\_\+\+TYPES}}, void \texorpdfstring{$\ast$}{*} $>$}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the data that the object contains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A std\+::pair$<$\+VALUE\+\_\+\+TYPES, void\texorpdfstring{$\ast$}{*}$>$ containing the data to be stored \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cymath__value_8hpp}{cymath\+\_\+value.\+hpp}}\end{DoxyCompactItemize}
